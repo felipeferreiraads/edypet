@@ -1,0 +1,60 @@
+.footer
+    background: $color.secondary
+    color: #ffffff
+    .footer-map
+        display: flex
+        justify-content: space-between
+        padding: 40px 0 40px
+        border-bottom: 1px solid $color.primary
+        .left
+            display: flex
+            flex-direction: column
+            padding-top: 50px
+            position relative
+            a 
+                &:hover
+                    color: $color.primary
+                    transition: 0.2s
+            &::before
+                content: ''
+                width 60px
+                height: 5px
+                background: $color.primary
+                position: absolute
+                top: 0
+                left: 0
+            a 
+                padding: 5px 0px
+        .right
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            color: $color.primary
+            font-weight: 700
+            padding-top: 50px
+            position: relative
+            &::before
+                content: ''
+                width 60px
+                height: 5px
+                background: $color.primary
+                position: absolute
+                top: 0
+                right: 0
+            .follow-us
+                font-size: 20px
+            .sm-icons
+                padding-top: 10px
+                a 
+                    font-size: 50px
+                    padding-left: 10px
+                    &:hover
+                        color: #fff
+                        transition: 0.2s
+    .copyright
+        color: #ffffff
+        display: flex
+        justify-content: center
+        font-weight: 700
+        font-size: 15px
+        padding: 40px

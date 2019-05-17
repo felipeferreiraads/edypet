@@ -1,0 +1,41 @@
+.banner
+    background: url(../img/banner-bg.jpg) center no-repeat
+    backgrouns-size: cover
+    &.alimentacao
+        background-image: url(../img/banner-alimentacao.jpg)
+    &.caes
+        background-image: url(../img/banner-caes.jpg)
+    &.gatos
+        background-image: url(../img/banner-gatos.jpg)
+    h1
+        color: $color.primary
+        text-align: center
+        margin: 20px
+        font-weight: 400
+    p
+        color: #ffffff
+        text-align: center
+    .grid
+        display: flex
+        flex-direction: column
+        align-items: center
+    .overlay
+        padding: 100px 0
+        background: rgba(0,0,0,0.4)
+    .button
+        color: $color.primary
+        padding: 10px 25px
+        line-height: 50px
+        text-transform: uppercase
+        border-style: solid 
+        border-radius: 25px
+        font-weight: 700
+        transition: 0.2s
+        &:hover
+            color: $color.secondary
+            background-color: $color.primary
+            border-style: solid 
+            border-radius: 25px
+            border-color: $color.primary
+        &:first-child
+            margin-right: 10px

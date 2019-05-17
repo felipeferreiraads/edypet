@@ -1,0 +1,40 @@
+header.normal
+    .grid
+        font-size: 14px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 50px
+    .left
+        display: flex
+    .phone
+        margin-right: 20px
+    .right
+        display: flex
+        > *:not(:last-child)
+            margin-right: 10px
+        .fa
+            color: $color.secondary
+            font-size: 18px
+
+header.internal
+    .grid
+        font-size: 14px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100px
+    .left
+        display: flex
+        flex-direction: column
+    .right
+        > *:not(:last-child)
+            margin-right: 10px
+        .fa
+            color: $color.secondary
+            font-size: 18px
+    .phone
+        margin-bottom: 10px
+    img 
+        height: 120px
+        margin-top: 20px

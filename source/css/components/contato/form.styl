@@ -1,0 +1,48 @@
+.contact-form
+    h2 
+        text-align: center
+        text-transform: uppercase
+        color: $color.secondary
+        position relative
+        margin-bottom: 60px
+        letter-spacing: 8px
+        padding: 40px 0 40px 0
+        &::after
+            content: ""
+            width: 300px
+            height 1px
+            background: $color.primary
+            position absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+    p
+        text-align: center
+        margin-bottom: 60px
+    form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        input
+            border: none 
+            border-left: 15px solid $color.secondary
+            background: #f2f2f2
+            height: 45px
+            margin-bottom: 20px
+            &.full
+                width: 100%
+            &.half
+                width: 49%
+        button
+            color: $color.secondary
+            text-transform: uppercase
+            font-size: 16px
+            font-weight: 700
+            border: 1px solid $color.primary
+            border-radius: 30px
+            padding: 10px 20px 10px 20px
+            &:hover
+                border: 1px solid $color.primary
+                background: $color.primary
+                border-radius: 30px
+                transition: 0.2s

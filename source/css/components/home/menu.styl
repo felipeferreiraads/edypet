@@ -1,0 +1,35 @@
+.menu
+    background: $color.secondary
+    .grid
+        display: flex
+        align-items: center
+        height: 50px
+        justify-content: space-between
+    .left
+        display: flex
+        a
+            color: #ffffff
+            &:hover
+                color: $color.primary
+                border-bottom: 3px solid $color.primary
+    .right
+        a
+            color: $color.primary
+            &:hover
+                transition: 0.2s
+                color: #ffffff
+                border-bottom: 3px solid #ffffff
+        span 
+            color: $color.primary
+            padding: 0 5px
+            &:hover
+                transition: 0.2s
+                color: #ffffff
+    a 
+        transition: 0.2s
+        padding: 12px 0
+        font-size: 15px
+        &:not(:last-child)
+            margin-right: 30px
+        
+    
