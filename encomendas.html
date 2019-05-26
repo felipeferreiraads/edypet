@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="banner contato">
+    <section class="banner caes">
         <div class="overlay">
             <div class="container">
                 
@@ -69,19 +69,56 @@
         </div>
     </section>
 
-    <section class="contact-form">
+    <section class="orders-form">
         <div class="container">
             <div class="grid">
                 <div class="title">
-                    <h2>Contato</h2>
-                    <p>Além das receitas oferecidas no site, também preparamos cardápios personalizados. Caso seu pet precise de uma dieta especial, não exite em solicitar seu orçamento!</p>
+                    <h2>Encomendas</h2>
+                    <p>Além das receitas oferecidas no site, também preparamos cardápios personalizados, caso seu Pet tenha alguma restrição, ou seja, se seu cão precisa de uma dieta especial, formulada por um profissional veterinário especificamente para ele, preparamos com todo carinho e cuidado a dieta indicada.</p>
                 </div>
                 <form>
-                    <input class="full" type="text" name="name" placeholder="Nome">
-                    <input class="half" type="text" name="phone" placeholder="Telefone">
-                    <input class="half" type="text" name="email" placeholder="E-mail">
-                    <input class="full" type="text" name="message" placeholder="Mensagem">
-                    <button>Enviar</button>
+                    <div class="field">
+                        <input class="full" type="text" name="name" placeholder="Nome">
+                    </div>
+                    <div class="field half">
+                        <input type="text" name="phone" placeholder="Telefone">
+                    </div>
+                    <div class="field half">
+                        <input class="half" type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="field half">
+                        <input class="city" type="text" name="cidade" placeholder="Cidade">
+                        <input class="uf" type="text" name="uf" placeholder="UF">
+                    </div>
+                    <div class="field half">
+                        <div class="radio-group">
+                            <span class="question">Qual seu pet?</span>
+                            <label>
+                                <input type="radio" name="species" value="Cão">
+                                <span class="label">Cão</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="species" value="Gato">
+                                <span class="label">Gato</span>
+                            </label>
+                        </div>
+                        <input class="pet-name" type="text" name="pet-name" placeholder="Nome do Pet">
+                    </div>
+                    <div class="checkbox-group">
+                        <span class="question">Serviços que tem interesse:</span>
+                        <label>
+                            <input type="checkbox" name="services" value="Dieta personalizada">
+                            <span class="label">Dieta personalizada</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="services" value="Comida para eventos">
+                            <span class="label">Comida para eventos (opção exclusiva para São Paulo)</span>
+                        </label>
+                    </div>
+                    <div class="field message">
+                        <input class="full" type="text" name="mensagem" placeholder="Descreva suas necessidades e considerações importantes sobre seu orçamento.">
+                    </div>
+                    <button>Solicitar orçamento</button>
                 </form>
             </div>
         </div>

@@ -1,0 +1,73 @@
+.orders-form
+    h2 
+        text-align: center
+        text-transform: uppercase
+        color: $color.secondary
+        position relative
+        margin-bottom: 60px
+        letter-spacing: 8px
+        padding: 40px 0 40px 0
+        &::after
+            content: ""
+            width: 300px
+            height 1px
+            background: $color.primary
+            position absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+    p
+        text-align: center
+        margin-bottom: 60px
+    form
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .field
+            width: 100%
+            display: flex
+            justify-content: space-between
+            &.half
+                width: 49%
+            &.message
+                input
+                    height: 200px
+            .city
+                width: 76%
+            .uf
+                width: 20%
+            .radio-group
+                display: flex
+                align-items: center
+                label 
+                    display: flex
+                    padding: 0 10px 0 10px
+            .checkbox-group
+                display: flex
+                justify-content: space-between
+            .pet-name
+                width: 50%
+        input[type=text]
+            width: 100%
+        input[type=text], span.question
+            border: none 
+            border-left: 15px solid $color.secondary
+            background: #f2f2f2
+            height: 45px
+            margin-bottom: 20px
+            display: inline-block
+        input[type=radio]
+            margin-right: 8px
+        button
+            color: $color.secondary
+            text-transform: uppercase
+            font-size: 16px
+            font-weight: 700
+            border: 1px solid $color.primary
+            border-radius: 30px
+            padding: 10px 20px 10px 20px
+            &:hover
+                border: 1px solid $color.primary
+                background: $color.primary
+                border-radius: 30px
+                transition: 0.2s

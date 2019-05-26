@@ -1,5 +1,5 @@
-.section-products-home
-    padding: 60px
+.feedback
+    margin-bottom: 60px
     .title
         h2 
             text-align: center
@@ -8,7 +8,7 @@
             position relative
             margin-bottom: 60px
             letter-spacing: 8px
-            padding: 0 0 40px 0
+            padding: 40px 0 40px 0
             &::after
                 content: ""
                 width: 300px
@@ -18,28 +18,17 @@
                 bottom: 0
                 left: 50%
                 transform: translateX(-50%)
-    .grid
+    .testimonials
         display: flex
         justify-content: space-between
-.card-product
-    display: flex
-    flex-direction: column
-    align-items: center
-    .name
-        font-weight: 700
-        padding: 6px
-    .price
-        color: $color.secondary
-        font-size: 24px
-        padding: 6px
-    figure 
-        width: 240px
-        height: 240px
-        border-radius: 100%
-        overflow hidden
-        margin-bottom: 30px
-    img  
-        width: 100%
-        height: 100%
-        object-fit: cover
-        object-position: center 
+        .card-feedback
+            display: flex
+            justify-content: space-between
+            padding: 20px
+            figure
+                margin-right: 20px
+                border-radius: 100%
+            p
+                padding-bottom: 10px
+            span 
+                font-weight: 700
