@@ -9,6 +9,9 @@ header.normal
         display: flex
     .phone
         margin-right: 20px
+    .email
+        +below($bp.sm)
+            display: none
     .right
         display: flex
         > *:not(:last-child)
@@ -16,8 +19,12 @@ header.normal
         .fa
             color: $color.secondary
             font-size: 18px
+        span.greetings
+            +below($bp.sm)
+                display: none 
 
 header.internal
+    position relative
     .grid
         font-size: 14px
         display: flex
@@ -27,14 +34,29 @@ header.internal
     .left
         display: flex
         flex-direction: column
+        +below($bp.sm)
+            font-size: 12px
     .right
         > *:not(:last-child)
             margin-right: 10px
         .fa
             color: $color.secondary
             font-size: 18px
+            +below($bp.sm)
+                font-size: 16px
+        span.greetings
+            +below($bp.sm)
+                display: none 
     .phone
         margin-bottom: 10px
+    .email
+        +below($bp.sm)
+            display: none
+    figure
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
     img 
         height: 120px
         margin-top: 20px

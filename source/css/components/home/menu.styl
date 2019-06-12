@@ -7,12 +7,16 @@
         justify-content: space-between
     .left
         display: flex
+        +below($bp.lg)
+            display: none
         a
             color: #ffffff
             &:hover
                 color: $color.primary
                 border-bottom: 3px solid $color.primary
     .right
+        +below($bp.lg)
+            display: none
         a
             color: $color.primary
             &:hover

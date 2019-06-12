@@ -1,12 +1,19 @@
 .benefits
     padding: 60px
+    +below($bp.md)
+        padding: 60px 20px 60px 20px
     .grid
         display: flex
+        flex-wrap: wrap
 
 .card-benefit
     width: 33.33%
     height: 399px
     position relative
+    +below($bp.lg)
+        width: 50%
+    +below($bp.sm)
+        width: 100%
     img
         width: 100%
         height 100%
@@ -35,11 +42,16 @@
         font-weight: 700
         color: $color.secondary
         font-size: 35px
+        +below($bp.xg)
+            font-size: 30px
+        +below($bp.md)
+            font-size: 24px
     .button
         color: $color.primary
         padding: 10px 25px
         line-height: 50px
         text-transform: uppercase
+        text-align: center
         border-style: solid 
         border-radius: 50px
         font-weight: 700

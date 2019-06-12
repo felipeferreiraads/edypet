@@ -92,7 +92,7 @@
                     </div>
                     <div class="field half">
                         <div class="radio-group">
-                            <span class="question">Qual seu pet?</span>
+                            <span class="question pet">Qual seu pet?</span>
                             <label>
                                 <input type="radio" name="species" value="Cão">
                                 <span class="label">Cão</span>
@@ -104,21 +104,25 @@
                         </div>
                         <input class="pet-name" type="text" name="pet-name" placeholder="Nome do Pet">
                     </div>
-                    <div class="checkbox-group">
-                        <span class="question">Serviços que tem interesse:</span>
-                        <label>
-                            <input type="checkbox" name="services" value="Dieta personalizada">
-                            <span class="label">Dieta personalizada</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" name="services" value="Comida para eventos">
-                            <span class="label">Comida para eventos (opção exclusiva para São Paulo)</span>
-                        </label>
+                    <div class="field">
+                        <div class="checkbox-group">
+                            <span class="question">Serviços que tem interesse:</span>
+                            <label>
+                                <input type="checkbox" name="services" value="Dieta personalizada">
+                                <span class="label">Dieta personalizada</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Comida para eventos">
+                                <span class="label">Comida para eventos (opção exclusiva para São Paulo)</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="field message">
-                        <input class="full" type="text" name="mensagem" placeholder="Descreva suas necessidades e considerações importantes sobre seu orçamento.">
+                        <textarea name="message" placeholder="Descreva suas necessidades e considerações importantes sobre seu orçamento."></textarea>
                     </div>
-                    <button>Solicitar orçamento</button>
+                    <div class="btn">
+                        <button>Solicitar orçamento</button>
+                    </div>
                 </form>
             </div>
         </div>

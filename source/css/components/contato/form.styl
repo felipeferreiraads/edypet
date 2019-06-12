@@ -23,16 +23,24 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        .btn
+            display: flex
+            justify-content: center
+            width: 100%
+            margin-top: 20px
         input
             border: none 
             border-left: 15px solid $color.secondary
             background: #f2f2f2
             height: 45px
             margin-bottom: 20px
+            padding-left: 10px
             &.full
                 width: 100%
             &.half
                 width: 49%
+                +below($bp.lg)
+                    width: 100%
         button
             color: $color.secondary
             text-transform: uppercase
@@ -40,7 +48,7 @@
             font-weight: 700
             border: 1px solid $color.primary
             border-radius: 30px
-            padding: 10px 20px 10px 20px
+            padding: 10px 40px 10px 40px
             &:hover
                 border: 1px solid $color.primary
                 background: $color.primary
